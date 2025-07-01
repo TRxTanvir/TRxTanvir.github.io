@@ -1,69 +1,162 @@
 /* General body styling */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #121212; /* Dark background */
-    color: #ffffff; /* White text */
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5; /* Light grey background */
+    color: #333; /* Dark grey text */
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+    line-height: 1.6;
+    padding: 20px 0;
 }
 
-/* The main content container */
+/* Main container for all content */
 .container {
-    background-color: #1e1e1e; /* Slightly lighter container */
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    text-align: center;
-    max-width: 500px;
-    width: 90%;
-}
-
-/* Profile picture styling */
-.profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%; /* Makes the image circular */
-    border: 3px solid #007BFF; /* A blue border, change color as you like */
-    object-fit: cover; /* Ensures the image covers the area without distortion */
-}
-
-/* Name styling */
-.name {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-size: 2em;
-}
-
-/* Bio styling */
-.bio {
-    margin-bottom: 30px;
-    font-size: 1.1em;
-    color: #bbbbbb; /* Lighter grey for the bio */
-}
-
-/* Links container */
-.links a {
-    display: block;
-    background-color: #333333;
-    color: #ffffff;
-    padding: 15px;
-    margin: 10px 0;
+    max-width: 900px;
+    width: 95%;
+    background-color: #ffffff;
     border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+/* Header section with profile pic and contact info */
+.header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #007BFF;
+    object-fit: cover;
+    margin-right: 25px;
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #000;
+}
+
+.header-text .subtitle {
+    margin: 5px 0 15px 0;
+    font-size: 1.2em;
+    font-weight: 300;
+    color: #555;
+}
+
+.contact-info span {
+    display: block;
+    margin-top: 5px;
+    color: #444;
+}
+
+.contact-info i {
+    margin-right: 8px;
+    color: #007BFF;
+}
+
+/* Social media links styling */
+.social-links {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.social-links a {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
     text-decoration: none;
-    font-size: 1.1em;
+    font-size: 1em;
     transition: background-color 0.3s, transform 0.2s;
 }
 
-/* Icon styling */
-.links a i {
-    margin-right: 10px;
+.social-links a:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
 }
 
-/* Hover effect for links */
-.links a:hover {
-    background-color: #007BFF; /* Highlight color on hover */
-    transform: scale(1.05); /* Slightly enlarge on hover */
+.social-links a i {
+    margin-right: 8px;
+}
+
+/* Card styling for each section */
+.card {
+    background-color: #fafafa;
+    border: 1px solid #e9e9e9;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #007BFF;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.card h2 i {
+    margin-right: 12px;
+}
+
+/* Job and Education entry styling */
+.job, .education {
+    margin-bottom: 20px;
+}
+
+.job:last-child, .education:last-child {
+    margin-bottom: 0;
+}
+
+h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.company {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Skills section styling */
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.skills-grid h4 {
+    margin: 0 0 5px 0;
+    color: #333;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-pic {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
 }
