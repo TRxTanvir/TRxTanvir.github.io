@@ -1,0 +1,69 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* White text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* The main content container */
+.container {
+    background-color: #1e1e1e; /* Slightly lighter container */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+}
+
+/* Profile picture styling */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Makes the image circular */
+    border: 3px solid #007BFF; /* A blue border, change color as you like */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+/* Name styling */
+.name {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+/* Bio styling */
+.bio {
+    margin-bottom: 30px;
+    font-size: 1.1em;
+    color: #bbbbbb; /* Lighter grey for the bio */
+}
+
+/* Links container */
+.links a {
+    display: block;
+    background-color: #333333;
+    color: #ffffff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Icon styling */
+.links a i {
+    margin-right: 10px;
+}
+
+/* Hover effect for links */
+.links a:hover {
+    background-color: #007BFF; /* Highlight color on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
