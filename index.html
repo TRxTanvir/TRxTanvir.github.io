@@ -3,41 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tanvir Hossain</title>
-    <!-- Link to our new stylesheet -->
+    <title>Tanvir Hossain - Full-Stack Developer</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Link to Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <div class="container">
-        <!-- Profile Picture -->
-        <img src="profile.jpg" alt="Tanvir Hossain" class="profile-pic">
+        <!-- Header Section -->
+        <header class="header">
+            <img src="profile.jpg" alt="Tanvir Hossain" class="profile-pic">
+            <div class="header-text">
+                <h1>Tanvir Hossain</h1>
+                <p class="subtitle">Fresh Graduate & Full-Stack Developer</p>
+                <div class="contact-info">
+                    <span><i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh</span>
+                    <span><i class="fas fa-phone"></i> +880 1609522922</span>
+                    <span><i class="fas fa-envelope"></i> hossaintanvir2001@gmail.com</span>
+                </div>
+            </div>
+        </header>
 
-        <!-- Name -->
-        <h1 class="name">Tanvir Hossain</h1>
-
-        <!-- Bio / Tagline -->
-        <p class="bio">
-            Full-Stack Developer | SEO & Meta Ads Expert
-        </p>
-
-        <!-- Links Section -->
-        <div class="links">
-            <a href="https://github.com/TRxTanvir" target="_blank" class="link-button">
-                <i class="fab fa-github"></i> GitHub
-            </a>
-            <a href="https://www.linkedin.com/in/TRxTanvir" target="_blank" class="link-button">
-                <i class="fab fa-linkedin"></i> LinkedIn
-            </a>
-            <a href="mailto:hossaintanvir2001@gmail.com" class="link-button">
-                <i class="fas fa-envelope"></i> Email Me
-            </a>
-            <a href="tel:+8801609522922" class="link-button">
-                <i class="fas fa-phone"></i> Contact Me
-            </a>
+        <!-- Social Links -->
+        <div class="social-links">
+            <a href="https://github.com/TRxTanvir" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/TRxTanvir" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
         </div>
+
+        <!-- About Section -->
+        <section class="card">
+            <h2><i class="fas fa-user"></i> About Me</h2>
+            <p>4+ years of experience in SEO, Meta Ads, and Social Media Marketing. Related to full-stack development are PHP, JavaScript, HTML, CSS, NextJS, NodeJS, NestJS, and PostgreSQL. Postman and GitHub are development tools, and Selenium is for testing. He is pursuing a BSc in Computer Science and Engineering at American International University-Bangladesh, graduating in 2025.</p>
+        </section>
+
+        <!-- Working Experience Section -->
+        <section class="card">
+            <h2><i class="fas fa-briefcase"></i> Working Experience</h2>
+            <div class="job">
+                <h3>Manager</h3>
+                <p class="company">TRxTech, Remote | Nov 2021 - Current</p>
+                <p>Boosted brand visibility through optimized Facebook and Instagram ads, increasing engagement by 25% and followers by 30%. Improved ROI by 15% via performance analysis. Developed content strategies and collaborated with clients for campaign alignment.</p>
+            </div>
+            <div class="job">
+                <h3>Formal CEO</h3>
+                <p class="company">Bluebell Bee, Remote | March 2022 - Current</p>
+                <p>Successfully led operations and team management, driving strategic initiatives and delivering measurable results. Played a key role in improving efficiency and fostering team collaboration.</p>
+            </div>
+            <div class="job">
+                <h3>Ads Marketing and SEO Expert</h3>
+                <p class="company">A.K. Corporation, Remote | January 2021 - Current</p>
+                <p>Developed and managed ad campaigns across social media platforms. Conducted in-depth keyword research and implemented SEO strategies to improve website rankings and organic traffic. Optimized ad budgets to maximize ROI. Analyzed campaign performance using analytics tools to refine strategies and achieve client objectives.</p>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section class="card">
+            <h2><i class="fas fa-code"></i> Technical Skills</h2>
+            <div class="skills-grid">
+                <div>
+                    <h4>Programming & Markup</h4>
+                    <p>PHP, JavaScript, HTML, CSS</p>
+                </div>
+                <div>
+                    <h4>Frameworks/Libraries</h4>
+                    <p>NextJS, NodeJS, NestJS</p>
+                </div>
+                <div>
+                    <h4>Databases & Tools</h4>
+                    <p>PostgreSQL, Postman, Selenium</p>
+                </div>
+                 <div>
+                    <h4>DevOps & Software</h4>
+                    <p>GitHub, MS Office, Adobe Photoshop, AutoCAD</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="card">
+            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+            <div class="education">
+                <h3>BSc in Computer Science and Engineering</h3>
+                <p>American International University-Bangladesh | 2021 - 2025</p>
+            </div>
+            <div class="education">
+                <h3>Higher Secondary Certificate (Science)</h3>
+                <p>Joynal Hazari College | 2018 - 2020</p>
+            </div>
+        </section>
+
     </div>
 
 </body>
