@@ -427,7 +427,11 @@ body {
     font-size: 0.9rem;
     color: #718096; /* Muted grey for copyright */
 }
-
+/* --- VISITOR BADGE STYLING --- */
+.footer-bottom img {
+    display: block;
+    margin: 0 auto 15px; /* Center the badge and add space below it */
+}
 /* Adjust footer for smaller screens */
 @media (max-width: 768px) {
     .footer-grid {
