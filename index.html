@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tanvir Hossain - Portfolio</title>
-    <!-- Combined Stylesheet -->
     <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome for Icons -->
+    <!-- Font Awesome for Icons (optional, but good to have) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,18 +14,23 @@
 </head>
 <body>
 
-    <!-- HERO SECTION (TOP OF THE PAGE) -->
-    <header class="hero-section">
-        <nav>
+    <!-- 1. CORRECT FIXED NAVIGATION BAR -->
+    <nav class="main-nav">
+        <div class="nav-container">
             <div class="logo">
                 <a href="#">Portfolio</a>
             </div>
-            <div class="menu-icon">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#resume">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 2. HERO SECTION -->
+    <header class="hero-section" id="home">
         <div class="hero-text">
             <p class="welcome">Welcome</p>
             <h1>I'm <span>Tanvir</span> Hossain</h1>
@@ -34,102 +38,55 @@
         </div>
     </header>
 
-    <!-- RESUME CONTENT SECTION (BELOW THE HERO) -->
-    <main class="resume-container">
-        <!-- Header Section -->
-        <header class="resume-header">
-            <img src="profile.jpg" alt="Tanvir Hossain" class="profile-pic">
-            <div class="header-text">
+    <!-- 3. "ABOUT ME" SECTION (The one that was missing) -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="profile.jpg" alt="Tanvir Hossain">
+            </div>
+            <div class="about-text">
                 <h2>Tanvir Hossain</h2>
-                <p class="subtitle">Fresh Graduate & Full-Stack Developer</p>
-                <div class="contact-info">
-                    <span><i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh</span>
-                    <span><i class="fas fa-phone"></i> +880 1609522922</span>
-                    <span><i class="fas fa-envelope"></i> hossaintanvir2001@gmail.com</span>
-                </div>
+                <p class="about-job-title">Full-Stack Developer & SEO Expert</p>
+                <p class="about-summary">
+                    4+ years of experience in SEO, Meta Ads, and Social Media Marketing, combined with a passion for full-stack development. Eager to apply my skills in a challenging professional role.
+                </p>
+                <ul class="personal-details">
+                    <li><strong>From:</strong> Dhaka, Bangladesh</li>
+                    <li><strong>Degree:</strong> BSc in CSE (Graduating 2025)</li>
+                    <li><strong>Email:</strong> hossaintanvir2001@gmail.com</li>
+                </ul>
+                <a href="my-cv.pdf" download class="cv-button">Download CV</a>
             </div>
-        </header>
-
-        <!-- Social Links -->
-        <div class="social-links">
-            <a href="https://github.com/TRxTanvir" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-            <a href="https://www.linkedin.com/in/TRxTanvir" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
         </div>
+    </section>
 
-        <!-- About Section -->
-        <section class="card">
-            <h3><i class="fas fa-user"></i> About Me</h3>
-            <p>4+ years of experience in SEO, Meta Ads, and Social Media Marketing. Related to full-stack development are PHP, JavaScript, HTML, CSS, NextJS, NodeJS, NestJS, and PostgreSQL. Postman and GitHub are development tools, and Selenium is for testing. He is pursuing a BSc in Computer Science and Engineering at American International University-Bangladesh, graduating in 2025.</p>
-        </section>
-
-        <!-- Working Experience Section -->
-        <section class="card">
-            <h3><i class="fas fa-briefcase"></i> Working Experience</h3>
-            <div class="job">
-                <h4>Manager</h4>
-                <p class="company">TRxTech, Remote | Nov 2021 - Current</p>
-                <p>Boosted brand visibility through optimized Facebook and Instagram ads, increasing engagement by 25% and followers by 30%. Improved ROI by 15% via performance analysis.</p>
-            </div>
-            <div class="job">
-                <h4>Formal CEO</h4>
-                <p class="company">Bluebell Bee, Remote | March 2022 - Current</p>
-                <p>Successfully led operations and team management, driving strategic initiatives and delivering measurable results. Played a key role in improving efficiency and fostering team collaboration.</p>
-            </div>
-        </section>
-    <!-- MY SKILLS SECTION -->
+    <!-- 4. "MY SKILLS" SECTION -->
     <section class="skills-section" id="skills">
         <div class="section-container">
             <h2 class="section-title">My Skills</h2>
             <div class="skills-grid">
-                <!-- Left Column: Technical Skills -->
                 <div class="skills-column">
                     <h3>Technical Skills</h3>
-                    <div class="skill">
-                        <p>NextJS / NodeJS / NestJS</p>
-                        <div class="progress-bar"><span class="progress" style="width: 90%;"></span></div>
-                    </div>
-                    <div class="skill">
-                        <p>PHP / JavaScript</p>
-                        <div class="progress-bar"><span class="progress" style="width: 95%;"></span></div>
-                    </div>
-                    <div class="skill">
-                        <p>HTML / CSS</p>
-                        <div class="progress-bar"><span class="progress" style="width: 100%;"></span></div>
-                    </div>
-                    <div class="skill">
-                        <p>PostgreSQL / Postman</p>
-                        <div class="progress-bar"><span class="progress" style="width: 85%;"></span></div>
-                    </div>
+                    <div class="skill"><p>NextJS / NodeJS / NestJS</p><div class="progress-bar"><span class="progress" style="width: 90%;"></span></div></div>
+                    <div class="skill"><p>PHP / JavaScript</p><div class="progress-bar"><span class="progress" style="width: 95%;"></span></div></div>
+                    <div class="skill"><p>HTML / CSS</p><div class="progress-bar"><span class="progress" style="width: 100%;"></span></div></div>
+                    <div class="skill"><p>PostgreSQL / Postman</p><div class="progress-bar"><span class="progress" style="width: 85%;"></span></div></div>
                 </div>
-                <!-- Right Column: Professional Skills -->
                 <div class="skills-column">
                     <h3>Professional Skills</h3>
-                    <div class="skill">
-                        <p>SEO & Keyword Research</p>
-                        <div class="progress-bar"><span class="progress" style="width: 95%;"></span></div>
-                    </div>
-                    <div class="skill">
-                        <p>Meta Ads (Facebook/Instagram)</p>
-                        <div class="progress-bar"><span class="progress" style="width: 90%;"></span></div>
-                    </div>
-                    <div class="skill">
-                        <p>Campaign Management & ROI</p>
-                        <div class="progress-bar"><span class="progress" style="width: 88%;"></span></div>
-                    </div>
-                     <div class="skill">
-                        <p>Team Leadership & Management</p>
-                        <div class="progress-bar"><span class="progress" style="width: 92%;"></span></div>
-                    </div>
+                    <div class="skill"><p>SEO & Keyword Research</p><div class="progress-bar"><span class="progress" style="width: 95%;"></span></div></div>
+                    <div class="skill"><p>Meta Ads (Facebook/Instagram)</p><div class="progress-bar"><span class="progress" style="width: 90%;"></span></div></div>
+                    <div class="skill"><p>Campaign Management & ROI</p><div class="progress-bar"><span class="progress" style="width: 88%;"></span></div></div>
+                    <div class="skill"><p>Team Leadership & Management</p><div class="progress-bar"><span class="progress" style="width: 92%;"></span></div></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- TIMELINE SECTION (Education & Experience) -->
+    <!-- 5. "RESUME" TIMELINE SECTION -->
     <section class="timeline-section" id="resume">
         <div class="section-container">
             <div class="timeline-grid">
-                <!-- Education Timeline -->
                 <div class="timeline">
                     <h2 class="section-title">Education</h2>
                     <div class="timeline-item">
@@ -143,14 +100,13 @@
                         <p class="timeline-subtitle">Joynal Hazari College</p>
                     </div>
                 </div>
-                <!-- Experience Timeline -->
                 <div class="timeline">
                     <h2 class="section-title">Experience</h2>
                     <div class="timeline-item">
                         <div class="timeline-date-tag experience-tag">Nov 2021 - Current</div>
                         <h4>Manager</h4>
                         <p class="timeline-subtitle">TRxTech, Remote</p>
-                        <p class="timeline-desc">Increased brand visibility and engagement by 25% through optimized ad campaigns. Improved ROI by 15% via performance analysis.</p>
+                        <p class="timeline-desc">Increased brand visibility and engagement by 25% through optimized ad campaigns.</p>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-date-tag experience-tag">Mar 2022 - Current</div>
@@ -162,29 +118,6 @@
             </div>
         </div>
     </section>
-        <!-- Technical Skills Section -->
-        <section class="card">
-            <h3><i class="fas fa-code"></i> Technical Skills</h3>
-            <div class="skills-grid">
-                <div>
-                    <h5>Programming & Markup</h5>
-                    <p>PHP, JavaScript, HTML, CSS</p>
-                </div>
-                <div>
-                    <h5>Frameworks/Libraries</h5>
-                    <p>NextJS, NodeJS, NestJS</p>
-                </div>
-                <div>
-                    <h5>Databases & Tools</h5>
-                    <p>PostgreSQL, Postman, Selenium</p>
-                </div>
-                 <div>
-                    <h5>DevOps & Software</h5>
-                    <p>GitHub, MS Office, Adobe Photoshop</p>
-                </div>
-            </div>
-        </section>
-    </main>
 
 </body>
 </html>
