@@ -121,3 +121,130 @@ h4 { margin: 0 0 5px 0; font-size: 1.2em; color: #333; }
     .profile-pic { margin-right: 0; margin-bottom: 20px; }
     .skills-grid { grid-template-columns: 1fr; }
 }
+/* --- UNIVERSAL SECTION STYLING --- */
+.section-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.section-title {
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: #333;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* --- SKILLS SECTION STYLES --- */
+.skills-section {
+    padding: 100px 0;
+    background-color: #f8f9fa; /* A very light grey */
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+.skills-column h3 {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 25px;
+}
+.skill {
+    margin-bottom: 20px;
+}
+.skill p {
+    margin-bottom: 8px;
+    font-family: 'Roboto', sans-serif;
+}
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.progress-bar .progress {
+    display: block;
+    height: 100%;
+    background-color: #e74c3c; /* Red color for the bar */
+    border-radius: 10px;
+}
+
+/* --- TIMELINE SECTIONS (EDUCATION & EXPERIENCE) --- */
+.timeline-section {
+    padding: 100px 0;
+    background-color: #fff;
+}
+.timeline-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+}
+.timeline {
+    position: relative;
+    padding-left: 30px; /* Space for the timeline vertical bar */
+}
+/* The vertical line */
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 8px;
+    width: 2px;
+    height: calc(100% - 10px);
+    background-color: #dee2e6;
+}
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+}
+/* The dot on the timeline */
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -39px; /* (30px padding + 8px position) - 1px correction */
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 3px solid #e74c3c;
+}
+.timeline-date-tag {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.education-tag { background-color: #e74c3c; color: #fff; }
+.experience-tag { background-color: #34495e; color: #fff; }
+
+.timeline-item h4 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+.timeline-item .timeline-subtitle {
+    color: #555;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+.timeline-item .timeline-desc {
+    font-family: 'Roboto', sans-serif;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* --- RESPONSIVE ADJUSTMENTS for new sections --- */
+@media (max-width: 992px) {
+    .skills-grid, .timeline-grid {
+        grid-template-columns: 1fr;
+    }
+    .timeline {
+        margin-bottom: 50px;
+    }
+}
