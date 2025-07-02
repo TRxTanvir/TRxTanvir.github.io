@@ -439,3 +439,26 @@ body {
         margin-bottom: 30px;
     }
 }
+.footer-contact-link {
+    display: block; /* Makes each link take its own line */
+    margin-bottom: 10px; /* Adds space between the links */
+    font-size: 1rem;
+}
+
+.footer-contact-link i {
+    margin-right: 10px; /* Adds space between the icon and the text */
+    width: 20px; /* Helps align the text vertically */
+    text-align: center;
+}
+
+/* Specific color for the WhatsApp Icon */
+.footer-contact-link i.fa-whatsapp {
+    color: #25D366; /* Official WhatsApp Green */
+    font-size: 1.2rem; /* Make the logo slightly larger */
+}
+
+/* Make other icons match the text hover color */
+.footer-contact-link:hover i.fa-envelope,
+.footer-contact-link:hover i.fa-phone {
+    color: #fff;
+}
