@@ -300,3 +300,122 @@ body {
     .about-image { margin-bottom: 60px; }
     .personal-details { text-align: left; display: inline-block; }
 }
+
+
+
+/* --- FOOTER SECTION STYLES --- */
+.site-footer {
+    background-color: #20232d; /* Very dark, cool grey */
+    color: #a0aec0; /* A soft, light grey for text */
+    padding: 80px 0 0; /* Add padding only to the top for now */
+}
+
+.footer-main {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.footer-title {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    text-align: left; /* Align text inside columns to the left */
+}
+
+.footer-column h4 {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px dotted #4a5568; /* Dotted line like in the image */
+}
+
+.footer-column p, .footer-column a {
+    color: #a0aec0;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #fff;
+}
+
+/* Subscribe Section */
+.footer-subscribe {
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.footer-subscribe h3 {
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.subscribe-form input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #4a5568;
+    background-color: #2d3748;
+    color: #fff;
+    border-radius: 5px 0 0 5px; /* Round left corners */
+    outline: none;
+}
+
+.subscribe-form input::placeholder {
+    color: #a0aec0;
+}
+
+.subscribe-form button {
+    padding: 15px 30px;
+    border: none;
+    background-color: #e74c3c; /* Red button */
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0; /* Round right corners */
+    transition: background-color 0.3s ease;
+}
+
+.subscribe-form button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+
+/* Bottom Bar with Copyright */
+.footer-bottom {
+    border-top: 1px solid #4a5568; /* Separator line */
+    padding: 25px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #718096; /* Muted grey for copyright */
+}
+
+/* Adjust footer for smaller screens */
+@media (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center; /* Center align columns when they stack */
+    }
+
+    .footer-column {
+        margin-bottom: 30px;
+    }
+}
