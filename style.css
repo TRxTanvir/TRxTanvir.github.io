@@ -22,20 +22,100 @@ body { font-family: 'Poppins', sans-serif; background-color: #ffffff; color: #33
 .hero-text h1 { font-size: 4.5rem; } .hero-text h1 span { font-weight: 700; color: #e74c3c; }
 
 /* --- ABOUT ME SECTION --- */
-.about-section { padding: 120px 0; }
-.about-container { display: flex; align-items: center; gap: 60px; }
-.about-image { flex-basis: 35%; position: relative; }
-.about-image img { width: 100%; }
-.about-image::after { content: ''; position: absolute; top: -20px; left: -20px; right: 20px; bottom: 20px; border: 4px solid #e74c3c; z-index: -1; }
-.about-text { flex-basis: 65%; } .about-text h2 { font-size: 2.8rem; }
-.about-text .about-job-title { font-size: 1.3rem; color: #e74c3c; font-weight: 700; margin-bottom: 20px; }
-.about-text .about-summary, .personal-details li { font-family: 'Roboto', sans-serif; }
-.details-cta-container { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; margin-top: 30px; }
-.personal-details { list-style: none; padding: 0; }
-.personal-details li { margin-bottom: 12px; }
-.personal-details li::before { content: '○'; color: #e74c3c; margin-right: 15px; }
-.cv-button { display: inline-block; padding: 14px 40px; border: 2px solid #e74c3c; border-radius: 5px; color: #e74c3c; text-decoration: none; font-weight: 700; flex-shrink: 0; transition: all 0.3s ease; }
-.cv-button:hover { background-color: #e74c3c; color: #fff; }
+/* --- ABOUT ME SECTION (Corrected Alignment) --- */
+.about-section {
+    padding: 120px 0;
+}
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.about-image {
+    flex-basis: 35%;
+    position: relative;
+}
+.about-image img {
+    width: 100%;
+}
+.about-image::after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: 20px;
+    bottom: 20px;
+    border: 4px solid #e74c3c;
+    z-index: -1;
+}
+.about-text {
+    flex-basis: 65%;
+}
+.about-text h2 {
+    font-size: 2.8rem;
+    font-weight: 500;
+    color: #333;
+}
+.about-text .about-job-title {
+    font-size: 1.3rem;
+    color: #e74c3c;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.about-text .about-summary {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 30px;
+}
+.details-cta-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px; /* Adds space when wrapping */
+    margin-top: 30px;
+}
+.personal-details {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* THIS IS THE FIX: We make each list item a flex container itself */
+.personal-details li {
+    display: flex;           /* Aligns the bullet and text on one line */
+    align-items: center;     /* Centers them vertically */
+    margin-bottom: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+.personal-details li::before {
+    content: '○';
+    color: #e74c3c;
+    margin-right: 15px;
+    font-weight: 700;
+}
+.personal-details li strong {
+    color: #333;
+    margin-right: 5px;
+}
+
+.cv-button {
+    display: inline-block;
+    padding: 14px 40px;
+    border: 2px solid #e74c3c;
+    border-radius: 5px;
+    color: #e74c3c;
+    text-decoration: none;
+    font-weight: 700;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+.cv-button:hover {
+    background-color: #e74c3c;
+    color: #fff;
+}
 
 /* --- SKILLS & TIMELINE SECTIONS --- */
 .skills-section, .timeline-section, .contact-form-section, .testimonial-section { padding: 100px 0; }
