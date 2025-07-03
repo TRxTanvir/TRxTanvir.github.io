@@ -128,7 +128,14 @@ body { font-family: 'Poppins', sans-serif; background-color: #ffffff; color: #33
 .footer-icon-link i.fa-whatsapp {
     color: #25D366;
 }
+ 
+ .footer-icon-link i.fa-linkedin {
+    color: #0A66C2; /* Official LinkedIn Blue */
+}
 
+ .footer-icon-link i.fa-github {
+    color: #FFFFFF; /* White for best visibility on the dark footer */
+}
 /* Subscribe form and bottom bar (unchanged) */
 .footer-subscribe { padding: 60px 0; border-top: 1px solid #4a5568; margin-top: 60px; text-align: center; }
 .footer-section-title { font-size: 1.8rem; color: #fff; font-weight: 500; margin-bottom: 30px; }
