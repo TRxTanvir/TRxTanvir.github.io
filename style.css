@@ -321,7 +321,90 @@ body {
     .personal-details { text-align: left; display: inline-block; }
 }
 
+/* --- CONTACT FORM SECTION --- */
+.contact-form-section {
+    padding: 100px 0;
+    background-color: #f8f9fa; /* Light grey background */
+}
 
+.section-subtitle {
+    text-align: center;
+    color: #666;
+    margin-top: -40px;
+    margin-bottom: 50px;
+}
+
+.contact-form {
+    max-width: 700px; /* Control the width of the form */
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    outline: none;
+    border-color: #e74c3c; /* Highlight with red color on focus */
+}
+
+.form-row {
+    display: flex;
+    gap: 20px; /* Space between the two inputs */
+}
+
+.form-row .form-group {
+    width: 100%; /* Each input group takes half the space */
+}
+
+.form-textarea {
+    resize: vertical; /* Allow user to resize the textarea vertically */
+}
+
+.form-submit {
+    text-align: center; /* Center the button */
+}
+
+.form-submit-btn {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.form-submit-btn:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive adjustment for the form */
+@media (max-width: 576px) {
+    .form-row {
+        flex-direction: column; /* Stack the inputs on small screens */
+        gap: 0;
+    }
+}
 
 /* --- FOOTER SECTION STYLES --- */
 .site-footer {
