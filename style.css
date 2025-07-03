@@ -80,7 +80,7 @@ body { font-family: 'Poppins', sans-serif; background-color: #ffffff; color: #33
 /* --- CORRECTED FOOTER LINK STYLES --- */
 .footer-column a {
     display: block;      /* This is the key: Forces each link onto a new line */
-    margin-bottom: 10px; /* Adds space below each link */
+    margin-bottom: 2px; /* Adds space below each link */
     color: #a0aec0;
     text-decoration: none;
     transition: color 0.3s ease;
@@ -97,10 +97,7 @@ body { font-family: 'Poppins', sans-serif; background-color: #ffffff; color: #33
     text-align: center;
 }
 
-/* Keep the WhatsApp icon color */
-.footer-column a i.fa-whatsapp {
-    color: #25D366;
-}
+
 .footer-contact-link { display: block; margin-top: 10px; }
 .footer-contact-link i { margin-right: 10px; width: 20px; }
 .footer-contact-link i.fa-whatsapp { color: #25D366; }
