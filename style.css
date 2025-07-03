@@ -549,3 +549,77 @@ body {
 .footer-contact-link:hover i.fa-phone {
     color: #fff;
 }
+/* --- TESTIMONIALS SLIDER SECTION --- */
+.testimonial-section {
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+.swiper {
+    width: 100%;
+    max-width: 800px; /* Control the width of the slider */
+    padding: 40px 0;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-card {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.review-text {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.client-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.client-info img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    border: 3px solid #e74c3c;
+}
+
+.client-details {
+    text-align: left;
+}
+
+.client-details h4 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0;
+}
+
+.client-details p {
+    color: #666;
+    margin: 0;
+}
+
+/* Style Swiper Navigation Arrows and Dots */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #e74c3c; /* Your theme's red color */
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #e74c3c; /* Your theme's red color */
+}
