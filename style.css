@@ -72,35 +72,24 @@ body { font-family: 'Poppins', sans-serif; background-color: #ffffff; color: #33
 .form-submit-btn { padding: 15px 40px; background-color: #e74c3c; color: #fff; border: none; border-radius: 5px; cursor: pointer; transition: all 0.3s ease; }
 .form-submit-btn:hover { background-color: #c0392b; transform: translateY(-2px); }
 
-/* --- FOOTER SECTION --- */
+/* --- FOOTER SECTION (Corrected) --- */
 .site-footer { background-color: #20232d; color: #a0aec0; padding-top: 80px; }
 .footer-title { font-size: 2.5rem; color: #fff; margin-bottom: 50px; text-align: center; }
 .footer-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; text-align: left; }
 .footer-column h4 { color: #fff; padding-bottom: 10px; border-bottom: 2px dotted #4a5568; margin-bottom: 15px; }
-/* --- CORRECTED FOOTER LINK STYLES --- */
+
+/* THIS IS THE FIX: This rule now correctly styles ALL links in the columns */
 .footer-column a {
-    display: block;      /* This is the key: Forces each link onto a new line */
-    margin-bottom: 2px; /* Adds space below each link */
+    display: block; /* Forces each link onto a new line */
+    margin-bottom: 10px; /* Adds vertical space between links */
     color: #a0aec0;
     text-decoration: none;
     transition: color 0.3s ease;
 }
+.footer-column a:hover { color: #fff; }
+.footer-column a i { margin-right: 10px; width: 20px; text-align: center; }
+.footer-column a i.fa-whatsapp { color: #25D366; }
 
-.footer-column a:hover {
-    color: #fff;
-}
-
-/* For links with icons (like WhatsApp, Phone) to align them */
-.footer-column a i {
-    margin-right: 10px;
-    width: 20px;
-    text-align: center;
-}
-
-
-.footer-contact-link { display: block; margin-top: 10px; }
-.footer-contact-link i { margin-right: 10px; width: 20px; }
-.footer-contact-link i.fa-whatsapp { color: #25D366; }
 .footer-subscribe { padding: 60px 0; border-top: 1px solid #4a5568; margin-top: 60px; text-align: center; }
 .footer-section-title { font-size: 1.8rem; color: #fff; font-weight: 500; margin-bottom: 30px; }
 .subscribe-form { display: flex; justify-content: center; max-width: 500px; margin: 0 auto; }
