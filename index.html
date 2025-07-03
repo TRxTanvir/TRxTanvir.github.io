@@ -4,31 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tanvir Hossain - Portfolio</title>
+    
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="favicon.png">
+    
+    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="style.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <!-- Libraries & Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-  <!-- Swiper's CSS -->
+    
+    <!-- Swiper's CSS for Testimonials -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    
+    <!-- Cloudflare Analytics -->
     <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "6863db99c2b84a13a32713302efc0421"}'></script>
 </head>
 <body>
 
-    <!-- FIXED NAVIGATION BAR -->
+    <!-- 1. FIXED NAVIGATION BAR -->
     <nav class="main-nav">
         <div class="nav-container">
-            <div class="logo">
-                <a href="#">Portfolio</a>
-            </div>
+            <div class="logo"><a href="#">Portfolio</a></div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#resume">Resume</a></li>
+                <li><a href="#testimonials">Clients</a></li>
                 <li><a href="#contact-form">Contact</a></li>
-
             </ul>
         </div>
     </nav>
@@ -42,28 +49,21 @@
         </div>
     </header>
 
-    <!-- 3. "ABOUT ME" SECTION  -->
+    <!-- 3. "ABOUT ME" SECTION -->
     <section class="about-section" id="about">
         <div class="about-container">
-            <div class="about-image">
-                <img src="profile.jpg" alt="Tanvir Hossain">
-            </div>
-                    <!-- Right Column: Text Content -->
+            <div class="about-image"><img src="profile.jpg" alt="Tanvir Hossain"></div>
             <div class="about-text">
                 <h2>Tanvir Hossain</h2>
                 <p class="about-job-title">Full-Stack Developer & SEO Expert</p>
-                <p class="about-summary">
-                    4+ years of experience in SEO, Meta Ads, and Social Media Marketing, combined with a passion for full-stack development. Eager to apply my skills in a challenging professional role.
-                </p>
-                
-                <!-- NEW Flexbox container for details and button -->
+                <p class="about-summary">4+ years of experience in SEO, Meta Ads, and Social Media Marketing, combined with a passion for full-stack development. Eager to apply my skills in a challenging professional role.</p>
                 <div class="details-cta-container">
                     <ul class="personal-details">
                         <li><strong>From:</strong> Dhaka, Bangladesh</li>
                         <li><strong>Degree:</strong> BSc in CSE (Graduating 2025)</li>
                         <li><strong>Email:</strong> hossaintanvir2001@gmail.com</li>
                     </ul>
-                    <a href="https://docs.google.com/document/d/1WFJK6qKQoCpyhDWzDHE4-E6rHFzL3J8TyVkb2GPUem0/edit?usp=sharing" download class="cv-button">Download CV</a>
+                    <a href="my-cv.pdf" download class="cv-button">Download CV</a>
                 </div>
             </div>
         </div>
@@ -74,14 +74,13 @@
         <div class="section-container">
             <h2 class="section-title">My Skills</h2>
             <div class="skills-grid">
-                <div class="skills-column">
+                 <div class="skills-column">
                     <h3>Technical Skills</h3>
                     <div class="skill"><p>NextJS / NodeJS / NestJS</p><div class="progress-bar"><span class="progress" style="width: 90%;"></span></div></div>
                     <div class="skill"><p>PHP / JavaScript</p><div class="progress-bar"><span class="progress" style="width: 95%;"></span></div></div>
                     <div class="skill"><p>HTML / CSS</p><div class="progress-bar"><span class="progress" style="width: 100%;"></span></div></div>
                     <div class="skill"><p>PostgreSQL / Postman</p><div class="progress-bar"><span class="progress" style="width: 85%;"></span></div></div>
-                     <div class="skill"><p>Selenium </p><div class="progress-bar"><span class="progress" style="width: 80%;"></span></div></div>
-
+                    <div class="skill"><p>Selenium</p><div class="progress-bar"><span class="progress" style="width: 80%;"></span></div></div>
                 </div>
                 <div class="skills-column">
                     <h3>Professional Skills</h3>
@@ -100,203 +99,87 @@
             <div class="timeline-grid">
                 <div class="timeline">
                     <h2 class="section-title">Education</h2>
-                    <div class="timeline-item">
-                        <div class="timeline-date-tag education-tag">2021 - 2025</div>
-                        <h4>BSc in Computer Science & Engineering</h4>
-                        <p class="timeline-subtitle">American International University-Bangladesh</p>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-date-tag education-tag">2018 - 2020</div>
-                        <h4>Higher Secondary Certificate</h4>
-                        <p class="timeline-subtitle">Joynal Hazari College</p>
-                    </div>
+                    <div class="timeline-item"><div class="timeline-date-tag education-tag">2021 - 2025</div><h4>BSc in Computer Science & Engineering</h4><p class="timeline-subtitle">American International University-Bangladesh</p></div>
+                    <div class="timeline-item"><div class="timeline-date-tag education-tag">2018 - 2020</div><h4>Higher Secondary Certificate</h4><p class="timeline-subtitle">Joynal Hazari College</p></div>
                 </div>
                 <div class="timeline">
                     <h2 class="section-title">Experience</h2>
-                    <div class="timeline-item">
-                        <div class="timeline-date-tag experience-tag">Nov 2021 - Current</div>
-                        <h4>Manager</h4>
-                        <p class="timeline-subtitle">TRxTech, Remote</p>
-                        <p class="timeline-desc">Increased brand visibility and engagement by 25% through optimized ad campaigns.</p>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-date-tag experience-tag">Mar 2022 - Current</div>
-                        <h4>Formal CEO</h4>
-                        <p class="timeline-subtitle">Bluebell Bee, Remote</p>
-                        <p class="timeline-desc">Led operations and team management, driving strategic initiatives and fostering team collaboration.</p>
-                    </div>
+                    <div class="timeline-item"><div class="timeline-date-tag experience-tag">Nov 2021 - Current</div><h4>Manager</h4><p class="timeline-subtitle">TRxTech, Remote</p><p class="timeline-desc">Increased brand visibility and engagement by 25%.</p></div>
+                    <div class="timeline-item"><div class="timeline-date-tag experience-tag">Mar 2022 - Current</div><h4>Formal CEO</h4><p class="timeline-subtitle">Bluebell Bee, Remote</p><p class="timeline-desc">Led operations and team management.</p></div>
                 </div>
             </div>
         </div>
     </section>
-        <!-- Swiper's JS -->
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-        <!-- Your custom slider initialization -->
-        <script>
-            const swiper = new Swiper('.swiper', {
-                // Optional parameters
-                loop: true,
-                autoplay: {
-                    delay: 2000, // 2 seconds, as requested
-                    disableOnInteraction: false, // Continue autoplay after user interaction
-                },
-
-                // If we need pagination
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-
-                // Navigation arrows
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-            });
-        </script>
-    
-   
-        <!-- TESTIMONIALS SLIDER SECTION -->
+        
+    <!-- 6. TESTIMONIALS SLIDER SECTION -->
     <section class="testimonial-section" id="testimonials">
         <div class="section-container">
             <h2 class="section-title">Happy Clients</h2>
-            
-            <!-- Swiper -->
             <div class="swiper">
                 <div class="swiper-wrapper">
-                    <!-- Slide 1 -->
-                    <div class="swiper-slide">
-                        <div class="testimonial-card">
-                            <p class="review-text">"Tanvir is an incredibly skilled developer with a keen eye for detail. He transformed our vision into a reality and delivered results that exceeded our expectations. A true professional!"</p>
-                            <div class="client-info">
-                                <img src="client1.jpg" alt="Client 1">
-                                <div class="client-details">
-                                    <h4>John Doe</h4>
-                                    <p>CEO, Tech Solutions Inc.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Slide 2 -->
-                    <div class="swiper-slide">
-                        <div class="testimonial-card">
-                            <p class="review-text">"Working with Tanvir on our SEO strategy was a game-changer. Our organic traffic increased by over 300% in just a few months. Highly recommended for anyone serious about growth."</p>
-                            <div class="client-info">
-                                <img src="client2.jpg" alt="Client 2">
-                                <div class="client-details">
-                                    <h4>Jane Smith</h4>
-                                    <p>Marketing Director, Creative Co.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Slide 3 -->
-                    <div class="swiper-slide">
-                        <div class="testimonial-card">
-                             <p class="review-text">"The level of professionalism and dedication is unmatched. Communication was clear, deadlines were met, and the final product was flawless. We will definitely be working together again."</p>
-                            <div class="client-info">
-                                <img src="client3.jpg" alt="Client 3">
-                                <div class="client-details">
-                                    <h4>Samuel Lee</h4>
-                                    <p>Founder, Innovate Startups</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="swiper-slide"><div class="testimonial-card"><p class="review-text">"Tanvir is an incredibly skilled developer with a keen eye for detail. He transformed our vision into a reality and delivered results that exceeded our expectations."</p><div class="client-info"><img src="client1.jpg" alt="Client 1"><div class="client-details"><h4>John Doe</h4><p>CEO, Tech Solutions Inc.</p></div></div></div></div>
+                    <div class="swiper-slide"><div class="testimonial-card"><p class="review-text">"Working with Tanvir on our SEO strategy was a game-changer. Our organic traffic increased by over 300% in just a few months. Highly recommended."</p><div class="client-info"><img src="client2.jpg" alt="Client 2"><div class="client-details"><h4>Jane Smith</h4><p>Marketing Director, Creative Co.</p></div></div></div></div>
+                    <div class="swiper-slide"><div class="testimonial-card"><p class="review-text">"The level of professionalism and dedication is unmatched. Communication was clear, deadlines were met, and the final product was flawless. We will definitely be working together again."</p><div class="client-info"><img src="client3.jpg" alt="Client 3"><div class="client-details"><h4>Samuel Lee</h4><p>Founder, Innovate Startups</p></div></div></div></div>
                 </div>
-                <!-- Add Pagination -->
                 <div class="swiper-pagination"></div>
-
-                <!-- Add Navigation -->
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
             </div>
         </div>
     </section>
-    <!-- NEW CONTACT FORM SECTION -->
+    
+    <!-- 7. CONTACT FORM SECTION -->
     <section class="contact-form-section" id="contact-form">
         <div class="section-container">
-            <h2 class="section-title">Contact Me</h2>
+            <h2 class="section-title">Get in Touch</h2>
             <p class="section-subtitle">Have a question or want to work together? Leave a message.</p>
-
             <form action="https://formspree.io/f/xvgryqwp" method="POST" class="contact-form">
-                <!-- Full-width Name Input -->
-                <div class="form-group">
-                    <input type="text" name="name" class="form-input" placeholder="Your Name" required>
-                </div>
-                <!-- Row for side-by-side inputs -->
-                <div class="form-row">
-                    <div class="form-group">
-                        <input type="email" name="email" class="form-input" placeholder="Email Address" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" name="subject" class="form-input" placeholder="Subject" required>
-                    </div>
-                </div>
-                <!-- Full-width Message Area -->
-                <div class="form-group">
-                    <textarea name="message" class="form-textarea" placeholder="Enter message here.." rows="6" required></textarea>
-                </div>
-                <!-- Submit Button -->
-                <div class="form-group form-submit">
-                    <button type="submit" class="form-submit-btn">Send Message</button>
-                </div>
+                <div class="form-row"><input type="text" name="name" class="form-input" placeholder="Your Name" required><input type="email" name="email" class="form-input" placeholder="Email Address" required></div>
+                <div class="form-group"><input type="text" name="subject" class="form-input" placeholder="Subject" required></div>
+                <div class="form-group"><textarea name="message" class="form-textarea" placeholder="Enter message here.." rows="5" required></textarea></div>
+                <div class="form-group form-submit"><button type="submit" class="form-submit-btn">Send Message</button></div>
             </form>
         </div>
     </section>
 
-    
-    <!-- FINAL FOOTER SECTION -->
-    <footer class="site-footer" id="contact">
+    <!-- 8. FOOTER SECTION -->
+    <footer class="site-footer">
         <div class="section-container">
-            <!-- Top part of the footer with info columns -->
             <div class="footer-main">
                 <h2 class="footer-title">Portfolio</h2>
                 <div class="footer-grid">
-                    <!-- Column 1: Location -->
-                    <div class="footer-column">
-                        <h4>Where to find me</h4>
-                        <p>Dhaka, Bangladesh</p>
-                    </div>
-                    <!-- Column 2: Social Media -->
-                    <div class="footer-column">
-                        <h4>Follow me</h4>
-                      <a href="https://www.linkedin.com/in/TRxTanvir" target="_blank">LinkedIn</a>
-                        <a href="https://github.com/TRxTanvir" target="_blank">GitHub</a>
-                    </div>
-                    <!-- Column 3: Email Contact -->
-                    <div class="footer-column">
-                       <h4>Contact me</h4>
-                         <a href="mailto:hossaintanvir2001@gmail.com" class="footer-contact-link">
-                            <i class="fas fa-envelope"></i> Email
-                        </a>
-                         <a href="tel:+8801609522922" class="footer-contact-link">
-                            <i class="fas fa-phone"></i> Phone
-                        </a>
-                         <a href="https://wa.me/8801609522922" target="_blank" class="footer-contact-link">
-                            <i class="fab fa-whatsapp"></i> WhatsApp
-                        </a>
-
-                    
-                    </div>
+                    <div class="footer-column"><h4>Where to find me</h4><p>Dhaka, Bangladesh</p></div>
+                    <div class="footer-column"><h4>Follow me</h4><a href="https://www.linkedin.com/in/TRxTanvir" target="_blank">LinkedIn</a><a href="https://github.com/TRxTanvir" target="_blank">GitHub</a></div>
+                    <div class="footer-column"><h4>Contact me</h4><a href="https://wa.me/8801609522922" target="_blank" class="footer-contact-link"><i class="fab fa-whatsapp"></i> WhatsApp</a><a href="tel:+8801609522922" class="footer-contact-link"><i class="fas fa-phone"></i> Phone</a></div>
                 </div>
             </div>
-
-                        <!-- Middle part: Subscribe form -->
             <div class="footer-subscribe">
-                <h3>Subscribe</h3>
-                <form action="https://formspree.io/f/xvgryqwp" method="POST" class="subscribe-form">
-                    <input type="email" name="email" placeholder="Email address" required>
-                    <button type="submit">Subscribe</button>
-                </form>
+                <h3 class="footer-section-title">Subscribe</h3>
+                <form action="https://formspree.io/f/xvgryqwp" method="POST" class="subscribe-form"><input type="email" name="subscriber_email" placeholder="Email address" required><button type="submit">Subscribe</button></form>
             </div>
-
-        <!-- Bottom bar with copyright -->
-        <div class="footer-bottom">
-             <img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2FTRxTanvir.github.io&label=Visitors&countColor=%23e74c3c" alt="Visitor count"/>
-            <p>Copyright © 2025 Tanvir Hossain. All rights reserved.</p>
         </div>
+        <div class="footer-bottom"><img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2FTRxTanvir.github.io&label=Visitors&countColor=%23e74c3c" alt="Visitor count"/><p>Copyright © 2025 Tanvir Hossain. All rights reserved.</p></div>
     </footer>
+
+    <!-- All JavaScript libraries and custom scripts go here, at the end of the body -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            autoplay: {
+                delay: 2500, // Slightly slower for better readability
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+    
 </body>
 </html>
