@@ -72,24 +72,64 @@ body { font-family: 'Poppins', sans-serif; background-color: #ffffff; color: #33
 .form-submit-btn { padding: 15px 40px; background-color: #e74c3c; color: #fff; border: none; border-radius: 5px; cursor: pointer; transition: all 0.3s ease; }
 .form-submit-btn:hover { background-color: #c0392b; transform: translateY(-2px); }
 
-/* --- FOOTER SECTION (Corrected) --- */
+/* --- FOOTER SECTION (Corrected for final design) --- */
 .site-footer { background-color: #20232d; color: #a0aec0; padding-top: 80px; }
 .footer-title { font-size: 2.5rem; color: #fff; margin-bottom: 50px; text-align: center; }
 .footer-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; text-align: left; }
-.footer-column h4 { color: #fff; padding-bottom: 10px; border-bottom: 2px dotted #4a5568; margin-bottom: 15px; }
 
-/* THIS IS THE FIX: This rule now correctly styles ALL links in the columns */
-.footer-column a {
-    display: block; /* Forces each link onto a new line */
-    margin-bottom: 10px; /* Adds vertical space between links */
+/* Styles for all column headings */
+.footer-column h4 {
+    color: #fff;
+    padding-bottom: 10px;
+    border-bottom: 2px dotted #4a5568;
+    margin-bottom: 15px;
+    font-size: 1.1rem; /* Adjusted size for better look */
+}
+
+/* Removes the border ONLY from the heading with this class */
+.footer-column h4.no-border {
+    border-bottom: none;
+}
+
+.footer-column p {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Style for simple text links (LinkedIn, GitHub) */
+.footer-simple-link {
+    display: block;
+    margin-bottom: 10px;
+    color: #a0aec0;
+    text-decoration: underline; /* Adds underline like in the image */
+    text-underline-offset: 4px; /* Adds space between text and underline */
+    transition: color 0.3s ease;
+}
+.footer-simple-link:hover {
+    color: #fff;
+}
+
+/* Style for links with icons (WhatsApp, Phone) */
+.footer-icon-link {
+    display: flex; /* Aligns icon and text on the same line */
+    align-items: center;
+    margin-bottom: 10px;
     color: #a0aec0;
     text-decoration: none;
     transition: color 0.3s ease;
 }
-.footer-column a:hover { color: #fff; }
-.footer-column a i { margin-right: 10px; width: 20px; text-align: center; }
-.footer-column a i.fa-whatsapp { color: #25D366; }
+.footer-icon-link:hover {
+    color: #fff;
+}
+.footer-icon-link i {
+    margin-right: 12px; /* Space between icon and text */
+    width: 20px;
+    font-size: 1.1rem;
+}
+.footer-icon-link i.fa-whatsapp {
+    color: #25D366;
+}
 
+/* Subscribe form and bottom bar (unchanged) */
 .footer-subscribe { padding: 60px 0; border-top: 1px solid #4a5568; margin-top: 60px; text-align: center; }
 .footer-section-title { font-size: 1.8rem; color: #fff; font-weight: 500; margin-bottom: 30px; }
 .subscribe-form { display: flex; justify-content: center; max-width: 500px; margin: 0 auto; }
