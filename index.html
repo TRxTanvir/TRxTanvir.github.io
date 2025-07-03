@@ -10,7 +10,9 @@
      <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "6863db99c2b84a13a32713302efc0421"}'></script>
+  <!-- Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "6863db99c2b84a13a32713302efc0421"}'></script>
 </head>
 <body>
 
@@ -127,7 +129,91 @@
             </div>
         </div>
     </section>
+        <!-- Swiper's JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
+        <!-- Your custom slider initialization -->
+        <script>
+            const swiper = new Swiper('.swiper', {
+                // Optional parameters
+                loop: true,
+                autoplay: {
+                    delay: 2000, // 2 seconds, as requested
+                    disableOnInteraction: false, // Continue autoplay after user interaction
+                },
+
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
+    
+   
+        <!-- TESTIMONIALS SLIDER SECTION -->
+    <section class="testimonial-section" id="testimonials">
+        <div class="section-container">
+            <h2 class="section-title">Happy Clients</h2>
+            
+            <!-- Swiper -->
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <p class="review-text">"Tanvir is an incredibly skilled developer with a keen eye for detail. He transformed our vision into a reality and delivered results that exceeded our expectations. A true professional!"</p>
+                            <div class="client-info">
+                                <img src="client1.jpg" alt="Client 1">
+                                <div class="client-details">
+                                    <h4>John Doe</h4>
+                                    <p>CEO, Tech Solutions Inc.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <p class="review-text">"Working with Tanvir on our SEO strategy was a game-changer. Our organic traffic increased by over 300% in just a few months. Highly recommended for anyone serious about growth."</p>
+                            <div class="client-info">
+                                <img src="client2.jpg" alt="Client 2">
+                                <div class="client-details">
+                                    <h4>Jane Smith</h4>
+                                    <p>Marketing Director, Creative Co.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                             <p class="review-text">"The level of professionalism and dedication is unmatched. Communication was clear, deadlines were met, and the final product was flawless. We will definitely be working together again."</p>
+                            <div class="client-info">
+                                <img src="client3.jpg" alt="Client 3">
+                                <div class="client-details">
+                                    <h4>Samuel Lee</h4>
+                                    <p>Founder, Innovate Startups</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- Add Navigation -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
     <!-- NEW CONTACT FORM SECTION -->
     <section class="contact-form-section" id="contact-form">
         <div class="section-container">
